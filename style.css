@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+
+  /* beautiful gradient background */
+  background: linear-gradient(135deg, #667eea, #764ba2);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* MAIN CARD (Notion-style box) */
+.card {
+  width: 420px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 25px;
+  color: white;
+
+  box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+}
+
+/* Title */
+h1 {
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  font-size: 13px;
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+
+/* INPUT BOX */
+.input-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #00c6ff;
+  color: white;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* FILTER BUTTONS */
+.filters {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.filters button {
+  flex: 1;
+  background: rgba(255,255,255,0.2);
+}
+
+.filters .active {
+  background: #00c6ff;
+}
+
+/* TASK LIST */
+ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: rgba(255,255,255,0.15);
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 12px;
+
+  transition: 0.2s;
+}
+
+li:hover {
+  transform: translateX(5px);
+}
+
+/* completed task */
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+/* buttons inside task */
+.task-btns button {
+  margin-left: 5px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
